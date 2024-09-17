@@ -22,7 +22,8 @@ function generatePassword(length, includeNumbers, includeCapitals, includeSymbol
     if (includeCapitals) {
         characterSet += capitals;
     }
-
+    
+    // Symbols feature implemented
     //Add symbols to character set
     if (includeSymbols) {
         characterSet += symbols;
