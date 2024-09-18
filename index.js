@@ -22,7 +22,7 @@ function generatePassword(length, includeNumbers, includeCapitals, includeSymbol
     if (includeCapitals) {
         characterSet += capitals;
     }
-    
+
     // Symbols feature implemented
     //Add symbols to character set
     if (includeSymbols) {
@@ -83,11 +83,11 @@ function run() {
                 
                 case '--length':
                 case '-l':
-                    const nextArg = args [i + 1] //This gets next argument
-                    const parsedLength = parseInt(nextArg); // Parse length
+                    const nextArg = args [i + 1]                     //This gets next argument
+                    const parsedLength = parseInt(nextArg);          // Parse length
                     if (!isNaN(parsedLength) && parsedLength > 0) {
-                        length = parsedLength; //Set length if valid
-                        i++; //Skips next arguements since its the length value
+                        length = parsedLength;                       //Set length if valid
+                        i++;                                         //Skips next arguements since its the length value
                     } else {
                         console.error('Error: Please enter a valid length')
                         return;
